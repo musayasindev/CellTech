@@ -13,7 +13,7 @@
     
     
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-4 fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-4 fixed-top" id="navbar">
         <div class="container-fluid">
           <a class="navbar-brand fs-1 mx-5 mb-2" id="logo">Cell Tech</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,15 +21,15 @@
           </button>
           
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <div class="nav-item text-center fs-5 text-dark px-5" id="support">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navi">
+              <div class="nav-item text-center fs-5 text-dark" id="support">
                 <div class="text1"><i class="bi bi-telephone-fill mx-2" id="call"></i>Customer Support</div>
-                <div class="text2">+92 2170 79640</div>
+                <div class="text2">+92 321 7079 640</div>
               </div>
               
               
-              <div class="nav-item text-center fs-5 text-dark mx-5 mt-2">
-                <div class="text1"><i class="bi bi-tools mx-2" id="call"></i>Repair Your Device</div>
+              <div class="nav-item text-center fs-5 text-dark mt-2 " id="fix">
+                <a href="#form" class="text1"><i class="bi bi-tools mx-2" id="call"></i>Repair Your Device</a>
               </div>
             </ul>
           </div>
@@ -111,7 +111,7 @@
           </div>
         </div>
         <button
-          class="carousel-control-prev"
+          class="carousel-control-prev mt-5"
           type="button"
           data-bs-target="#myCarousel"
           data-bs-slide="prev"
@@ -120,7 +120,7 @@
           <span class="visually-hidden">previous</span>
         </button>
         <button
-        class="carousel-control-next"
+        class="carousel-control-next mt-5"
         type="button"
         data-bs-target="#myCarousel"
         data-bs-slide="next"
@@ -131,9 +131,6 @@
     </div>
   </section>
     
-
-
-
 
 
   <section id="cards">
@@ -214,8 +211,8 @@
 </div>
 
 <div class="container-xxl bg-light" id="tabCards">
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
+  <div id="carouselExapleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner oww">
       <div class="carousel-item active" data-bs-interval="5000">
 
 
@@ -298,8 +295,8 @@
 </div>
 
 <div class="container-xxl bg-light" id="mobileCards">
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-    <d class="carousel-inner">
+  <div id="tarouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner ace">
       <div class="carousel-item active" data-bs-interval="5000">
 
           <div class="card text-center">
@@ -316,9 +313,9 @@
 
           <div class="card text-center">
             <i class="bi bi-people-fill  fw-bold mt-3" id="clock"></i>
-          <div class="card-body">
+          <div class="card-body pb-5">
             <h5 class="card-title mt-1 fw-bold">Expert Technicans</h5>
-            <p class="card-text text-muted mb-1 px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit ad fuga natus est quisquam, facere officiis? Fugiat impedit et sit sapiente suscipit nam autem modi possimus, voluptates in quaerat!</p>
+            <p class="card-text text-muted mb-1 pb-2 px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit ad fuga natus est quisquam, facere officiis? Fugiat impedit et sit sapiente suscipit nam autem modi possimus, voluptates in quaerat!</p>
           </div>
         </div>
 
@@ -329,9 +326,9 @@
     
           <div class="card text-center">
             <i class="bi bi-currency-dollar fw-bold mt-3" id="clock"></i>
-          <div class="card-body">
+          <div class="card-body pb-5">
             <h5 class="card-title mt-1 fw-bold">Lowest Prices</h5>
-            <p class="card-text text-muted mb-1 px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit ad fuga natus est quisquam, facere officiis? Fugiat impedit et sit sapiente suscipit nam autem modi possimus, voluptates in quaerat!</p>
+            <p class="card-text text-muted mb-1 pb-2 px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit ad fuga natus est quisquam, facere officiis? Fugiat impedit et sit sapiente suscipit nam autem modi possimus, voluptates in quaerat!</p>
           </div>
         </div>
 
@@ -355,13 +352,16 @@
      
           <div class="card text-center">
             <i class="bi bi-tablet fw-bold mt-3" id="clock"></i>
-          <div class="card-body">
+          <div class="card-body pb-5">
             <h5 class="card-title mt-1 fw-bold">Any Mobile Device</h5>
-            <p class="card-text text-muted mb-1 px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit ad fuga natus est quisquam, facere officiis? Fugiat impedit et sit sapiente suscipit nam autem modi possimus, voluptates in quaerat!</p>
+            <p class="card-text text-muted mb-1 pb-2 px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit ad fuga natus est quisquam, facere officiis? Fugiat impedit et sit sapiente suscipit nam autem modi possimus, voluptates in quaerat!</p>
           </div>
         </div>
 
-</div>        
+</div>      
+
+<div class="carousel-item" data-bs-interval="4000">
+
         <div class="card text-center">
           <i class="bi bi-lock fw-bold mt-3" id="clock"></i>
         <div class="card-body pb-5">
@@ -370,7 +370,7 @@
         </div>
       </div>
           
-        
+</div>        
           
 
       </div>

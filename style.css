@@ -27,6 +27,31 @@ min-height: 500px;
 }
 
 
+@media screen and (max-width: 425px) {
+  #navbar{
+    height: 100px;
+  }
+
+  #logo{
+    margin-left: 10px !important;
+  }
+}
+
+
+@media screen and (max-width: 425px) {
+  #navbar{
+    height: 90px;
+  }
+}
+
+
+.text1{
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+}
+
+
 #logo{
     color: rgb(0, 132, 255);
     font-weight: 500;
@@ -39,13 +64,24 @@ min-height: 500px;
 
 #support{
     border-right: 1px solid #000;
+    width: 50%;
+}
+
+
+#fix{
+  width: 50%;
 }
 
 
 #navbarSupportedContent{
     margin-left: 30% !important;
+    width: 50%;
 }
 
+
+#navi{
+width: 100%;
+}
 
 .carousel-background{
   filter: brightness(30%);
@@ -62,6 +98,7 @@ min-height: 500px;
   margin-top: 80px !important;
 }
 
+
 @media screen  and (max-width: 992px){
   .card-group{
     margin-top: 60px !important;
@@ -71,12 +108,15 @@ min-height: 500px;
   .card-group{
     margin-top: 35px !important;
   }
+
 }
 
 
 #tabCards{
   display: none;
 }
+
+
 @media screen  and (max-width: 799px){
 
   #tabCards{
@@ -90,6 +130,7 @@ min-height: 500px;
   .card-group{
     margin-top: 95px !important;
   }
+
 }
 
 
@@ -106,14 +147,103 @@ min-height: 500px;
   }
 }
 
+@media screen  and (max-width: 575px){
+ .card-group{
+   margin-top: 40px !important;
+ }
+
+
+ #carouselExapleSlidesOnly{
+   height: 650px!important;
+
+   overflow: visible;
+ }
+
+
+ .oww{
+   height: 650px;
+ }
+
+}
+
+
+@media screen  and (max-width: 472px){
+  #carouselExapleSlidesOnly{
+    height: 700px!important;
+  }
+
+  .oww{
+    height: 700px;
+  }
+ }
+
+
+ @media screen  and (max-width: 404px){
+  #carouselExapleSlidesOnly{
+    height: 750px!important;
+  }
+
+  .oww{
+    height: 750px;
+  }
+ }
+
+
+ @media screen  and (max-width: 404px){
+  #carouselExapleSlidesOnly{
+    height: 800px!important;
+  }
+
+  .oww{
+    height: 800px;
+  }
+ }
+
 
 #mobileCards{
   display: none;
 }
-@media screen  and (max-width: 576px){
+
+
+@media screen  and (max-width: 375px){
+
   #mobileCards{
+margin-top: 50px;
+
 display: block;
+
+}
+
+
+#tabCards{
+display: none;
+}
+
+#tarouselExampleSlidesOnly{
+  height: 390px !important;
+}
+
+.ace{
+  height: 390px !important;
+}
+
+}
+
+
+@media screen and (max-width: 345px){
+
+  #tarouselExampleSlidesOnly{
+    height: 450px !important;
   }
+  
+  .ace{
+    height: 450px !important;
+  }
+
+  #mobileCards{
+    margin-top: 50px !important;
+  }
+
 }
 
 
@@ -140,7 +270,7 @@ display: block;
 .carousel {
     margin-bottom: 0rem !important;
    
-    height: 511px !important;
+    height: 550px !important;
 
     overflow: hidden;
   }
@@ -152,7 +282,7 @@ display: block;
   
   /* Declare heights because of positioning of img element */
   .carousel-item {
-    height: 32rem;
+    height: 35rem;
     position: relative;
   }
   .carousel-item > img {
@@ -160,7 +290,7 @@ display: block;
     top: 0;
     right: 0;
     min-width: 100%;
-    height: 32rem;
+    height: 34rem;
   }
   
   
