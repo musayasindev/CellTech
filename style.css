@@ -8,23 +8,103 @@
 
 
 .background{
-min-height: 500px;
+min-height: 450px;
 
     color: #fff;
     font-size: 3rem;
 
     background-image: url('background.jpg');
     background-attachment: fixed;
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(40%);
     background-size: cover;
+    -moz-background-size: cover;
+-webkit-background-size: cover;
+-o-background-size: cover;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
+.backgroundOverlay{
+  width: 100%;
+  min-height: 450px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.num{
+  font-size: 4.5rem;
+  font-weight: 800;
+
+  color: rgb(0, 132, 255);
+
+  transition: 700ms;
+}
+
+
+.rowhead{
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+
+.promisehead{
+  color: rgb(0, 132, 255);
+}
+
+
+.head{
+  font-size: 1.5rem;
+  font-weight: 700 !important;
+ 
+  width: 100px;
+ 
+  transition: 400ms;
+}
+
+
+.head .repair{
+position: relative;
+bottom: 5px;
+}
+
+
+.colpara{
+  font-size: 1.1rem;
+}
+
+
+.head2{
+  font-size: 1.5rem;
+  font-weight: 700 !important;
+
+  width: 170px !important;
+  
+  transition: 400ms;
+}
+
+
+#wePromise:hover .head{
+color: rgb(0, 132, 255);
+}
+#wePromise:hover .head2{
+  color: rgb(0, 132, 255);
+  }  
+#wePromise:hover .num{
+  color: #fff;
+  }
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 425px) {
