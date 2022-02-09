@@ -62,8 +62,8 @@
           aria-label="Slide 3"
           ></button>
         </div>
-        <div class="carousel-inner" id="arousel">
-          <div class="carousel-item active" data-bs-interval='4000'>
+        <div class="carousel-inner" id="arusel">
+          <div class="carousel-item active sliderItem" data-bs-interval='4000'>
             <img src="/background.jpg" class="carousel-background">
             
             <div class="container">
@@ -76,7 +76,7 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item" data-bs-interval="4000">
+        <div class="carousel-item sliderItem" data-bs-interval="4000">
           
           <img src="/background.jpg" class="carousel-background">
           
@@ -92,7 +92,7 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item" data-bs-interval="4000">
+            <div class="carousel-item sliderItem" data-bs-interval="4000">
               
               <img src="/background.jpg" class="carousel-background">
               
@@ -111,6 +111,7 @@
           </div>
         </div>
         <button
+        id="indicator"
           class="carousel-control-prev mt-5"
           type="button"
           data-bs-target="#myCarousel"
@@ -120,6 +121,7 @@
           <span class="visually-hidden">previous</span>
         </button>
         <button
+        id="indicator"
         class="carousel-control-next mt-5"
         type="button"
         data-bs-target="#myCarousel"
@@ -135,7 +137,7 @@
 
   <section id="cards">
 
-    <div class="container-xxl bg-light" id="pcCards">
+    <div class="container-xxl" id="pcCards">
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="5000">
@@ -444,66 +446,199 @@
 </div>
 </div>
 
-<div class="container mt-3" id="laptopPromise">
+<div class="container-fluid mt-3" id="tabPromise">
           
   <div class="row text-center pt-4 mt-5">
-    
+            
     <h1 class="rowhead">We <org class="promisehead">Promise</org> </h1>
     
   </div>
-  
-  
-  <div class="row pt-2 g-4" id="wePromise">
 
-    <div class="col-3">
+
+    <div id="carouselExampleInd" class="carousel slide" data-bs-ride="carousel">
+    
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row pt-5 g-4" id="wePromise">
+
+          <div class="col-6">
+            <div class="colhead d-flex">
+              <div class="num mx-3">1</div>
+  <div class="head mt-4">QUICK <org class="repair">REPAIRS</org></div>
+</div>
+
+ <p class="colpara">Lorem ipsum dolor sit amet consec adipi elit. Iste autem reiciendis nesciunt itaque molestias</p>
+ 
+</div>
+
+<div class="col-6">
+  <div class="colhead d-flex">
+    <div class="num mx-3">2</div>
+    <div class="head2 mt-4 is">HIGH QUALITY <org class="repair">REPAIRS</org></div>
+    <div class="head mt-4 if">HIGH <org class="repair">QUALITY</org></div>
+  </div>
+  
+  <p class="colpara">Lorem ipsum dolor sit amet consect adcing elit. Iste autem reiciendis nesciunt itaque molestias</p>
+  
+</div>
+      
+
+
+
+</div>
+</div>
+
+
+
+
+<div class="carousel-item">
+  <div class="row pt-5 g-4" id="wePromise">
+
+    <div class="col-6">
       <div class="colhead d-flex">
-        <div class="num mx-3">1</div>
-<div class="head mt-4">QUICK <org class="repair">REPAIRS</org></div>
-</div>
+        <div class="num mx-3">3</div>
+        <div class="head mt-4">DATA <org class="repair">PROTECTION</org></div>
+      </div>
+      
+      <p class="colpara">Lorem ipsum dolor sit amet consect adipis elit. Iste autem reiciendis nesciunt itaque molestias</p>
+      
+    </div>
+    
+    <div class="col-6">
+      <div class="colhead d-flex">
+        <div class="num mx-3">4</div>
+        <div class="head mt-4">QUICK <org class="repair">REPAIRS</org></div>
+      </div>
+      
+      <p class="colpara">Lorem ipsum dolor sit amet consect adipisic elit. Iste autem reiciendis nesciunt itaque molestias</p>
+      
+    </div>
 
-<p class="colpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem reiciendis nesciunt itaque molestias</p>
-
-</div>
-
-<div class="col-3">
-<div class="colhead d-flex">
-<div class="num mx-3">2</div>
-<div class="head2 mt-4">HIGH QUALITY <org class="repair">REPAIRS</org></div>
-</div>
-
-<p class="colpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem reiciendis nesciunt itaque molestias</p>
-
-</div>
-
-<div class="col-3">
-<div class="colhead d-flex">
-<div class="num mx-3">3</div>
-<div class="head mt-4">DATA <org class="repair">PROTECTION</org></div>
-</div>
-
-<p class="colpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem reiciendis nesciunt itaque molestias</p>
-
-</div>
-
-<div class="col-3">
-<div class="colhead d-flex">
-<div class="num mx-3">4</div>
-<div class="head mt-4">QUICK <org class="repair">REPAIRS</org></div>
-</div>
-
-<p class="colpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem reiciendis nesciunt itaque molestias</p>
-
-</div>
-
-
-
-</div>
+  </div>
 </div>
 
 </div>
 
 
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInd" data-bs-slide="prev" id="current">
+  <span class="carousel-control-prev-icon d-none" aria-hidden="true"></span>
+  <span class="sr-only"><i class="bi bi-dot it"></i></span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInd" data-bs-slide="next" id="next">
+  <span class="carousel-control-next-icon d-none" aria-hidden="true"></span>
+  <span class="sr-only"><i class="bi bi-dot it"></i></span>
+</button>
+
+
 </div>
+
+
+</div>
+
+
+<div class="container-fluid mt-3" id="mobilePromise">
+          
+  <div class="row text-center pt-4 mt-5">
+            
+    <h1 class="rowhead">We <org class="promisehead">Promise</org> </h1>
+    
+  </div>
+
+
+    <div id="carouselExampleInd" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators" id="">
+        <button type="button" data-bs-target="#carouselExampleInd" data-bs-slide-to="0" class="active it" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleInd" data-bs-slide-to="1"  class="it" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleInd" data-bs-slide-to="2" class="it" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleInd" data-bs-slide-to="3"  class="it" aria-label="Slide 4"></button>
+      
+      </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row pt-5 g-4" id="wePromise">
+
+          <div class="col-12">
+            <div class="colhead d-flex">
+              <div class="num mx-3">1</div>
+  <div class="head mt-4">QUICK <org class="repair">REPAIRS</org></div>
+</div>
+
+ <p class="colpara">Lorem ipsum dolor sit amet consec adipi elit. Iste autem reiciendis nesciunt itaque molestias</p>
+ 
+</div>
+
+</div></div>
+
+
+<div class="carousel-item">
+  <div class="row pt-5 g-4" id="wePromise">
+<div class="col-12">
+  <div class="colhead d-flex">
+    <div class="num mx-3">2</div>
+    <div class="head2 mt-4 is">HIGH QUALITY <org class="repair">REPAIRS</org></div>
+    <div class="head mt-4 if">HIGH <org class="repair">QUALITY</org></div>
+  </div>
+  
+  <p class="colpara">Lorem ipsum dolor sit amet consect adcing elit. Iste autem reiciendis nesciunt itaque molestias</p>
+  
+</div>
+      </div></div>
+
+
+
+
+
+
+
+
+
+<div class="carousel-item">
+  <div class="row pt-5 g-4" id="wePromise">
+
+    <div class="col-12">
+      <div class="colhead d-flex">
+        <div class="num mx-3">3</div>
+        <div class="head mt-4">DATA <org class="repair">PROTECTION</org></div>
+      </div>
+      
+      <p class="colpara">Lorem ipsum dolor sit amet consect adipis elit. Iste autem reiciendis nesciunt itaque molestias</p>
+      
+    </div>
+    </div></div>
+    
+
+    <div class="carousel-item">
+      <div class="row pt-5 g-4" id="wePromise">
+    <div class="col-12">
+      <div class="colhead d-flex">
+        <div class="num mx-3">4</div>
+        <div class="head mt-4">QUICK <org class="repair">REPAIRS</org></div>
+      </div>
+      
+      <p class="colpara">Lorem ipsum dolor sit amet consect adipisic elit. Iste autem reiciendis nesciunt itaque molestias</p>
+      
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+</div>
+
+</div>
+
+
+</div>
+
+
+
 </section>
         
         
