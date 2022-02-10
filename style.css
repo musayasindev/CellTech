@@ -7,6 +7,11 @@
 }
 
 
+#navbar.dark{
+  background-color: #000 !important;
+}
+
+
 .background{
 min-height: 450px;
 
@@ -109,18 +114,11 @@ color: rgb(0, 132, 255);
 
 @media screen and (max-width: 425px) {
   #navbar{
-    height: 100px;
+    height: 90px;
   }
 
   #logo{
     margin-left: 10px !important;
-  }
-}
-
-
-@media screen and (max-width: 425px) {
-  #navbar{
-    height: 90px;
   }
 }
 
@@ -137,6 +135,29 @@ color: rgb(0, 132, 255);
     font-weight: 500;
 }
 
+
+#current{
+  left: 41%;
+}
+
+
+#next{
+  right: 41%;
+}
+
+
+.it{
+  color: rgb(0, 132, 255);
+}
+
+
+#next:active{
+  color: rgb(0, 102, 255);
+}
+
+#current:active{
+  color: rgb(0, 102, 255);
+}
 
 #call{
     color: rgb(0, 132, 255);
@@ -179,10 +200,24 @@ width: 100%;
 }
 
 
+
+#tabPromise{
+  display: none;
+}
 @media screen  and (max-width: 992px){
   .card-group{
     margin-top: 60px !important;
   }
+  #laptopPromise{
+    display: none;
+  }
+  #tabPromise{
+    display: block;
+  }
+  #sliderindi{
+    margin-bottom: 15rem;
+  }
+  
 }
 @media screen  and (max-width: 832px){
   .card-group{
@@ -193,6 +228,9 @@ width: 100%;
 
 
 #tabCards{
+  display: none;
+}
+.if{
   display: none;
 }
 
@@ -228,6 +266,7 @@ width: 100%;
 }
 
 @media screen  and (max-width: 575px){
+
  .card-group{
    margin-top: 40px !important;
  }
@@ -244,27 +283,71 @@ width: 100%;
    height: 650px;
  }
 
+
+.it{
+  position: relative;
+  top: 20px;
+}
+.is{
+  display: none;
+}
+.if{
+  display: block;
+}
 }
 
 
+#mobilePromise{
+  display: none;
+}
 @media screen  and (max-width: 472px){
+  #mobilePromise{
+    display: block;
+  }
+
+
+  #tabPromise{
+    display: none;
+  }
+
+
+  .rowhead{
+    font-size: 2.5rem;
+  }
+
+
+  .is{
+    display: block;
+  }
+  .if{
+    display: none;
+  }
+
+
+  .colpara{
+    font-size: 1rem;
+    width: 330px;
+    margin-left: 20px ;
+  }
+
+
+  #wePromise{
+    transform: scale(1.1);
+  }
+  
+  
   #carouselExapleSlidesOnly{
     height: 700px!important;
   }
 
+
   .oww{
     height: 700px;
   }
- }
 
 
- @media screen  and (max-width: 404px){
-  #carouselExapleSlidesOnly{
-    height: 750px!important;
-  }
-
-  .oww{
-    height: 750px;
+  .it{
+   top: -250px;
   }
  }
 
@@ -311,6 +394,13 @@ display: none;
 
 
 @media screen and (max-width: 345px){
+.it{top: -220px;}
+
+
+.colpara{
+  width: 260px;
+}
+
 
   #tarouselExampleSlidesOnly{
     height: 450px !important;
@@ -354,9 +444,28 @@ display: none;
 
     overflow: hidden;
   }
+  @media screen and (min-width: 1290px) {
+    #myCarousel{
+      overflow: visible;
+      height: 780px !important;
+    }
+    .sliderItem{
+      overflow: visible;
+      height: 48.5rem !important;
+    }
+    .sliderItem > img{
+      height: 48.5rem !important;
+    }
+    .carousel-caption {
+      bottom: 9rem !important;
+    }
+   #pcCards{
+     transform: scale(1);
+   }
+  }
   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
-    bottom: 3rem;
+    bottom: 4rem;
     z-index: 10;
   }
   
@@ -423,6 +532,6 @@ display: none;
   
   @media (min-width: 62em) {
     .featurette-heading {
-      margin-top: 7rem;
+      margin-top: 0rem;
     }
   }
